@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>SimpleSwap Frontend</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<h1>SimpleSwap DApp</h1>
+
+<div id="account">No wallet connected</div>
+<button id="connectBtn">Connect Wallet</button>
+
+<h2>Get Price</h2>
+<label for="priceDirection">Select price direction:</label>
+<select id="priceDirection">
+  <option value="AtoB">Token A → Token B</option>
+  <option value="BtoA">Token B → Token A</option>
+</select>
+
+<button id="getPriceBtn">Get Price</button>
+<div id="priceResult"></div>
+
+<h2>Swap Tokens</h2>
+<label for="swapDirection">Swap direction:</label>
+<select id="swapDirection">
+  <option value="AtoB">Token A → Token B</option>
+  <option value="BtoA">Token B → Token A</option>
+</select>
+
+<label for="swapAmount">Amount to swap:</label>
+<input type="number" id="swapAmount" placeholder="Enter amount" min="0" step="any" />
+
+<button id="swapBtn">Swap</button>
+
+<div id="messages"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/ethers/dist/ethers.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
