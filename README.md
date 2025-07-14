@@ -6,6 +6,7 @@ A decentralized application (DApp) to interact with the `SimpleSwap` smart contr
 - Connect their Ethereum wallet (MetaMask)
 - Swap **Token A ↔ Token B**
 - Get real-time price between the two tokens
+- Claims Token A & Token B
 
 ---
 
