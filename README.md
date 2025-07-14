@@ -15,7 +15,7 @@ A decentralized application (DApp) to interact with the `SimpleSwap` smart contr
 
 ## 📁 Project Structure
 
-```
+```plaintext
 /contracts/           → Solidity smart contracts (SimpleSwap, ERC20Mock)
 /docs/       → Frontend static files (HTML, CSS, JS)
   ├── index.html
@@ -41,6 +41,7 @@ Using contracts deployed to the Sepolia testnet.
 - **SimpleSwap address**: `0x2debfF655D680D528f69449665Bfda617D544241`
 - **Token A address**: `0x2d2B2C2af6f4F87E722E064dcD9fDd3F94ce7597`
 - **Token B address**: `0xe7318ea312EE8b8faAD947136f4C1b0d75484667`
+- **Faucet address**: `0x452D2D90345428e542F78B666572a3Db5cA9499e`
 - **LP Token Symbol**: LQP
 
 ---

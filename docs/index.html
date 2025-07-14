@@ -7,35 +7,43 @@
 <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+<div class="container">
+  
+  <div class="left-column">
+    <h1>SimpleSwap DApp</h1>
+    <button id="connectBtn">Connect Wallet</button>
 
-<h1>SimpleSwap DApp</h1>
+    <div>
+      <h3>Get Price</h3>
+      <select id="priceDirection">
+        <option value="AtoB">Token A → Token B</option>
+        <option value="BtoA">Token B → Token A</option>
+      </select>
+      <button id="getPriceBtn">Get Price</button>
+      <div id="priceResult" style="margin-top: 3px; font-size: 12px;"></div>
+    </div>
 
-<div id="account">No wallet connected</div>
-<button id="connectBtn">Connect Wallet</button>
+    <div>
+      <h3>Swap Tokens</h3>
+      <select id="swapDirection">
+        <option value="AtoB">Token A → Token B</option>
+        <option value="BtoA">Token B → Token A</option>
+      </select>
+      <input type="number" id="swapAmount" placeholder="Amount" min="0" style="width: 96.5%;" />
+      <button id="swapBtn">Swap</button>
+    </div>
 
-<h2>Get Price</h2>
-<label for="priceDirection">Select price direction:</label>
-<select id="priceDirection">
-  <option value="AtoB">Token A → Token B</option>
-  <option value="BtoA">Token B → Token A</option>
-</select>
+    <div>
+      <h3>Faucet</h3>
+      <button id="claimTokensBtn">Claim Tokens</button>
+    </div>
+  </div>
 
-<button id="getPriceBtn">Get Price</button>
-<div id="priceResult"></div>
-
-<h2>Swap Tokens</h2>
-<label for="swapDirection">Swap direction:</label>
-<select id="swapDirection">
-  <option value="AtoB">Token A → Token B</option>
-  <option value="BtoA">Token B → Token A</option>
-</select>
-
-<label for="swapAmount">Amount to swap:</label>
-<input type="number" id="swapAmount" placeholder="Enter amount" min="0" step="any" />
-
-<button id="swapBtn">Swap</button>
-
-<div id="messages"></div>
+  <div class="right-column">
+    <div id="account"></div>
+    <div id="messages" class="message"></div>
+  </div>
+</div>
 
 <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
 <script src="app.js"></script>
